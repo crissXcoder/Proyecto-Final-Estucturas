@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Stack - Minecraft Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Operaciones con Stack</h1>
+        <div class="stack-display" id="stackDisplay"></div>
+        <div class="controls">
+            <div class="control">
+                <button onclick="read()">Leer</button>
+                <span id="readResult"></span>
+            </div>
+            <div class="control">
+                <label for="insertValue">Insertar valor:</label>
+                <input type="text" id="insertValue" onkeypress="handleKeyPress(event, 'insert')">
+                <button onclick="insert()">Insertar</button>
+                <span id="insertMessage"></span>
+            </div>
+            <div class="control">
+                <button onclick="del()">Eliminar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
