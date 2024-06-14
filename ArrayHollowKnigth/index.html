@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Arrays</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Operaciones con Arrays</h1>
+        <div class="array-display" id="arrayDisplay"></div>
+        <div class="controls">
+            <div class="control">
+                <label for="accessIndex">Acceder a índice:</label>
+                <input type="number" id="accessIndex" onkeypress="handleKeyPress(event, 'access')">
+                <button onclick="access()">Acceder</button>
+                <span id="accessResult" class="result"></span>
+            </div>
+            <div class="control">
+                <label for="searchValue">Buscar valor:</label>
+                <input type="text" id="searchValue" onkeypress="handleKeyPress(event, 'search')">
+                <button onclick="search()">Buscar</button>
+                <span id="searchResult" class="result"></span>
+            </div>
+            <div class="control">
+                <label for="insertValue">Insertar valor:</label>
+                <input type="text" id="insertValue" onkeypress="handleKeyPress(event, 'insert')">
+                <button onclick="insert()">Insertar</button>
+            </div>
+            <div class="control">
+                <label for="deleteIndex">Eliminar en índice:</label>
+                <input type="number" id="deleteIndex" onkeypress="handleKeyPress(event, 'del')">
+                <button onclick="del()">Eliminar</button>
+            </div>
+            <div class="control">
+                <button onclick="sortAscending()">Ordenar Ascendente</button>
+                <button onclick="sortDescending()">Ordenar Descendente</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
