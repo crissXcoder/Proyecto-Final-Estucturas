@@ -85,3 +85,5 @@ function handleKeyPress(event, action) {
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', displayArray);
