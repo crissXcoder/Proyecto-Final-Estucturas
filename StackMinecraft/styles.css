@@ -1,0 +1,76 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url('Minecraft.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-shadow: 1px 1px #000;
+}
+.container {
+    background-color: rgba(62, 62, 62, 0.8);
+    border: 4px solid #4caf50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+}
+h1 {
+    color: #4caf50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.stack-display {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 20px 0;
+}
+.stack-element {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #8b4513;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    display: inline-block;
+}
+.controls {
+    margin-top: 20px;
+}
+.control {
+    margin-bottom: 10px;
+}
+.control label {
+    color: #fff;
+}
+input[type="text"] {
+    font-family: 'Press Start 2P', cursive;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    background-color: #3e3e3e;
+    color: #fff;
+}
+button {
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 1px 1px #000;
+}
+button:hover {
+    background-color: #45a049;
+}
